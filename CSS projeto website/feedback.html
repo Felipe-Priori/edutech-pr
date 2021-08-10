@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Minecraft news Feedback</title>
+		<link rel="icon" sizes="300x300" href="logo.png">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><a href="pagina-inicial.html"><img class="logo" src="logo2.png"></a></h1>
+
+				<nav>
+					<ul>
+						<li><a href="pagina-inicial.html">Home</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<h1 class="tituloinput">Envie seu feedback</h1>
+				<label for="feedback">E-mail</label>
+				<input type="email" id="feedback" required placeholder="seuemail@dominio.com">
+
+				<label for="nomesobrenome">Nome e Sobrenome</label>
+				<input type="text" id="nomesobrenome" required>
+
+				<label for="telefone">Numero de telefone</label>
+				<input type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem de feedback</label>
+				<textarea id="mensagem" cols="70" rows="10" required></textarea>
+
+				<input type="submit" value="Enviar" id="enviar">
+			</form>
+		</main>
+
+		<footer>
+			<img class="logocopy" src="logo.png">
+			<p class="copyright">&copy; Copyright Minecraft News - 2021</p>
+		</footer>
+	</body>
+</html>
