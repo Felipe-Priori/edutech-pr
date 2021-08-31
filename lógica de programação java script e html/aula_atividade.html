@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+Pode ou não votar?
+<br>
+<input>
+<button>Confirmar</button>
+
+<script>
+
+function mostra(frase) {
+
+        document.write(frase);
+        
+}
+
+var idade = document.querySelector("input");
+idade.focus();
+
+function verifica() {
+
+		if(idade.value < 16)  {
+		 	
+		mostra("Não pode votar");
+
+		}
+
+		if(idade.value >= 16 && idade.value < 18) {
+
+			mostra("Facultativo");
+		}
+
+		if(idade.value >= 18 && idade.value <= 64 ) {
+
+			mostra("Voto Obrigatório");
+		}	
+		idade.value = "";
+		idade.focus();
+}
+var button = document.querySelector("button");
+
+button.onclick = verifica;
+
+
+
+
+
+	</script>

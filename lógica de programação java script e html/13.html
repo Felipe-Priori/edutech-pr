@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+Qual o melhor número?
+<br>
+<input/>
+
+<button>Continuar</button>
+
+<script>
+
+function mostra(frase)  {
+
+	document.write(frase);
+
+}
+
+var input = document.querySelector("input");
+input.focus();
+
+	
+	function verifica() {
+
+		if(input.value == 13)	{
+
+			alert("Parabéns você é parte do 13");
+	
+		}   else   {
+
+		mostra("<h1><big>Tente novamente</big></h1>");
+			
+		} 	
+		if(input.value == 14) {
+
+			mostra("<big><h1>VOCÊ OUSA FALAR ESTE NÚMERO, ENTÃO VOCÊ SÓ PODE SER UM DOS DELE!!!!!</big><h1>");
+
+		}
+
+	}
+		
+
+var button = document.querySelector("button");
+	button.onclick = verifica;
+
+</script>
